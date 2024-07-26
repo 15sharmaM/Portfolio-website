@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link rel="stylesheet" href = "normalize.css" >
+    <link rel="stylesheet" href = "design.css" >
+    <link rel="stylesheet" href="colourschemes.css">
+    <title>Contact Page</title>
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+          <header>
+              <div class="top-section">
+              <h1>Muskan Sharma</h1>
+              </div>
+              <!-- <div class="logo">
+                <img src="logo.png" alt="logo image"></div>
+              </div> -->
+          </header>
+
+          <div class="navigation_box">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><div><a href="degree_programme.html">Degree programme</a></div></li> -->
+                <li><div><a href="SGA.html">SGA and mySkills</a></div></li>
+                <!-- <li><div><a href="Quiz.html">Quiz</a></div></li> -->
+              </ul>
+
+            </nav>
+          </div>
+
+          <main>
+            <div class = "module landing">
+            <div class="module container">
+                  <h2>Contact Page</h2>
+
+                  <div class = "welcome">
+                     <p>This page acts as a bridge to allow you to email me with any comments you may have.
+                       I have also provided the Department of Computer Science details.</p>
+                  </div>
+
+                  <div class = "contact-details">
+                    <h3>Contact Details</h3>
+                    <ul>
+                      <li>Full name: Muskan Sharma</li>
+                      <li>Email: msharma4@sheffield.ac.uk</li>
+                    </ul>
+
+                    <h3>Address:</h3>
+                    <ul>
+                      <li>Department of Computer Science</li>
+                      <li>The University of Sheffield</li>
+                      <li>Regent Court</li>
+                      <li>211 Portobello</li>
+                      <li>Sheffield</li>
+                      <li>S1 4DP</li>
+                      <li>UK</li>
+                    </ul>
+                  </div>
+                  <br>
+                  <div class="main-form">
+                    <h3>Contact Form</h3>
+                    <form action="/contact-form" method="post">
+                      <ul>
+                        <li>
+                          <label for="preferred-name">Enter your preferred name:</label>
+                          <input type="text" id="preferred-name" required minlength="2" maxlength="10" size="13" placeholder="Preferred Name">
+                        </li>
+
+                        <li>
+                          <label for="email">Enter your email:</label>
+                          <input type="email" id="email" placeholder="Email:">
+                        </li>
+
+                        <li>
+                          <label for="comment">Enter your Comments:</label>
+                          <!-- Maximum of 750 characters to prevent malicious code insertion -->
+                          <br>
+                          <textarea id="comment" required minlength="2" maxlength="750" placeholder="Comments:">
+                          </textarea>
+                        </li>
+
+                        <li>
+                          <label for="checkbox">I consent for my email to be used by the author of this webpage to allow them to contact me regarding my comments:</label>
+                          <input type="checkbox" id="checkbox">
+                        </li>
+
+                        <li>
+                          <button type="submit" name="button">Send email</button>
+                        </li>
+
+                      </ul>
+                    </div>
+                    </form>
+                    <br>
+            </div>
+            </div>
+          </main>
+      <footer>
+        <div class="navigation_box">
+          <nav>
+            <ul>
+              <!-- <li><div><a href="Accessibility.html">Accessibility</a></div></li> -->
+              <li><div><a href="Legal.html">Legality and security</a></div></li>
+              <!-- <li><div><a href="Design-page.html">Design</a></div></li>
+              <li><div><a href="Testing.html">Testing</a></div></li> -->
+              <li><div><a href="contact.html">Contact</a></div></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

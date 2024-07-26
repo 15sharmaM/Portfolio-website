@@ -1,0 +1,683 @@
+/* stops the heading from touching the logo */
+.top-section{
+  width: 70%;
+  position: relative;
+}
+
+
+.logo{
+  width: 100px;
+  height: 50px;
+  width: 75%;
+}
+
+/* controls the logo look and feel */
+header img{
+  right: 16px;
+  top: 15px;
+  width: 80px;
+  border-radius: 15px;
+  object-fit: contain;
+  flex: 40%;
+  position: absolute;
+  height: auto;
+}
+
+/* create a flexbox for the header for fluid transitions on different devices */
+header h1{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 40%;
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive,sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.063em;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
+
+
+#wrapper {
+width: 100%;
+margin: 0 auto;
+}
+
+/* main page around all the containers */
+body {
+  min-width: 320px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-family: alegreya-sans,sans-serif;
+  font-weight: 500;
+  font-weight: bolder;
+  letter-spacing: 0.10rem;
+  line-height: 3rem;
+  font-size: 1rem;
+}
+
+/* Implementing mobile-first, using a flexbox with columns */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main figcaption{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  letter-spacing: 0.10rem;
+  line-height: 3rem;
+  font-size: 1rem;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-family: 'Abril Fatface', cursive,sans-serif;
+  font-weight: normal;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  padding-left: 12vw;
+
+}
+
+
+
+/*navigation bar*/
+/*Inspiration for the nav bar was used from: https://responsivenavigation.net/examples/simple-padding/ */
+/* I built upon this ,through the use of a flexbox */
+.navigation_box nav {
+  padding: 2%;
+  font-size: 3em;
+  font-family: "OCR A Std", monospace,serif;
+  font-weight: normal;
+  line-height: normal;
+}
+
+
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  list-style: none;
+  flex-shrink: 3;
+}
+div nav ul li {
+  /* padding-right: 5%; */
+  text-align: center;
+  flex: 10;
+  flex-shrink: 10;
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+/* transition lasts this amount of time */
+.navigation_box ul{
+  transition: transform 2s;
+}
+/* when the cursor hovers over the section,the section enlarges */
+.navigation_box li:hover{
+  transform: scale(1.2);
+}
+/* desktop/larger screen*/
+
+@media screen and (min-width: 720px) {
+  *{
+    box-sizing: border-box;
+  }
+  header h1{
+    font-size: 3rem;
+  }
+
+  main div img{
+    width: 30%;
+
+  }
+
+  body{
+    /* colour fills the page */
+      width: 100%;
+      margin: 0 auto;
+      margin-right: 0%;
+      margin-bottom: 0%;
+    }
+
+/* controls the grid layout */
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column{
+    flex: 50%;
+  }
+
+ .column img{
+    vertical-align: middle;
+  }
+
+
+  .index-page img{
+    vertical-align: middle;
+  }
+
+  .software-engineering{
+    width: 90%;
+    vertical-align: middle;
+    /*margin: 0 auto; */
+    padding: 20px;
+  }
+/* change the welcome alignment on larger screens */
+  .welcome{
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+
+  }
+
+
+}
+@media screen and (max-width: 550px) {
+/* change the nav bars to be columns on really small screens */
+  div nav ul {
+    flex-direction: column;
+  }
+}
+
+/*phone*/
+/* controls the grid layout on phones of the images*/
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "gallery";
+  grid-gap: 10px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 20px 20px black:
+
+}
+
+/* images in the main body have rounded borders */
+main div img{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 85px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/* opening message on each page has the same layout */
+.welcome{
+  max-width: 75%;
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+
+}
+
+
+.welcome p{
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+
+/* Degree programme content */
+/* The names of the elements correspond to the module(course) name */
+.software-engineering{
+  max-width: 80%;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.software-engineering p{
+  max-width: 100%;
+  padding: 20px;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  font-family: alegreya-sans,sans-serif;
+  font-weight: bolder;
+
+}
+
+/* all images in the degree page are enclosed by a curved box */
+.second-section{
+  border-radius: 12px;
+}
+
+.foundations{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.foundations p{
+  width: 100%;
+  padding: 20px;
+}
+
+.java{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.java p{
+  width: 100%;
+  padding: 20px;
+}
+
+.machines{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.machines p{
+  width: 100%;
+  padding: 20px;
+}
+
+.devices{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.devices p{
+  width: 100%;
+  padding: 20px;
+}
+
+.internet{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.internet p{
+  width: 100%;
+  padding: 20px;
+}
+
+/* applies to every paragraph in the degree page */
+.first-section{
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 5px;
+}
+
+/* Quiz Page elements */
+.answer-box{
+  position: relative;
+}
+.answer-box div{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+/* hovering over the container will display the answer */
+.answer-box:hover div{
+  display: block;
+}
+
+.question-box{
+  padding-left: 20px;
+}
+
+/* bullet list style */
+.question-box ul{
+  list-style-type: square;
+}
+
+/*Legal page elements*/
+.legality{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.legality p{
+  padding: 20px;
+}
+
+
+.legality h3{
+  padding: 20px;
+}
+
+/* article class discussing how security was kept in mind */
+.security{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.security p{
+  padding: 20px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+/* accessibility page elements */
+.accessibility-statement{
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+
+
+/* sga and mySkills page elements */
+.sga{
+  padding: 20px;
+}
+
+.my-experience{
+  padding: 20px;
+}
+
+.my-experience li{
+  list-style-type:square;
+  padding: 30px;
+}
+
+.sga ul{
+  list-style-type:square;
+  padding: 30px;
+}
+
+.accessibility-statement p{
+  width: 100%;
+}
+
+/* Contact page elements */
+.contact-details{
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.contact-details p {
+  width: 100%;
+}
+
+/* Container to align all the contents of the form */
+.main-form{
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+
+.main-form h3 {
+  text-align: center;
+}
+
+/* comment box aligned properly on the page */
+#comment {
+  max-width: 100%;
+  width: 90%;
+  height: auto;
+}
+
+
+/* Design page elements */
+.design-introduction{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.design-introduction{
+  padding: 20px;
+}
+
+.design-mockups p{
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+/* site-map includes both the image and the explanatory text */
+.site-map{
+    max-width: 75%;
+    margin: 0 auto;
+    position: relative;
+    letter-spacing: 0.10rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.site-map p {
+  padding: 20px;
+}
+
+/*sitemap-container is the actual image */
+.sitemap-container {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition lasts this amount of time */
+.sitemap-container img{
+  transition: transform .3s;
+}
+
+/* increase the size of the image when the mouse hovers */
+.sitemap-container img:hover{
+  transform: scale(1.75);
+}
+
+.design-introduction{
+  padding: 20px;
+}
+
+/*from the article discussing breakpoints*/
+.breakpoints{
+  max-width: 75%;
+  margin: 0 auto;
+  /* padding: 20px; */
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.breakpoints p{
+  padding: 20px;
+}
+
+.breakpoints h3{
+  padding: 20px;
+}
+
+/* Testing page elements */
+.optimisation{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+/* from the article discussing the main page(index.html) */
+.index-page{
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.index-page p{
+  padding: 20px;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+}
+
+.debugging{
+max-width: 75%;
+margin: 0 auto;
+position: relative;
+letter-spacing: 0.10rem;
+font-size: 1rem;
+width: 100%;
+border-radius: 12px;
+border-width: 2px;
+border-color: white;
+border-style: solid;
+padding: 20px;
+}
+
+/* transition lasts this amount of time */
+.debugging img{
+  transition: transform 0.2s;
+  max-width: 100%;
+  height: auto;
+}
+/* when the cursor hovers over the section,the section enlarges */
+.debugging img:hover{
+  transform: scale(1.5);
+}
+
+.browser-testing{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.browser-testing img:hover{
+  transform: scale(1.5);
+
+}
+
+.accessibility-testing{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.accessibility-testing img:hover{
+  transform: scale(1.5);
+}
+
+.responsive-design{
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+  letter-spacing: 0.10rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+
+/* copyright alignment*/
+footer p{
+  text-align: center;
+}
